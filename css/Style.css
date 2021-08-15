@@ -1,0 +1,280 @@
+/* Comiendo de Proyecto UPDT Html */
+* {
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif !important; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url("/Imagenes/Backgrounds/herringbone.png");
+  background-repeat: repeat; }
+
+/* Inicio de header */
+header {
+  margin: 0 auto; }
+
+.containerHeaderUPDT {
+  text-align: left !important;
+  display: flex;
+  background: #a99875;
+  background: -moz-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  background: -webkit-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  background: linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1); }
+
+.tracking-in-contract-bck-top {
+  -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+.logoUPDT {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%; }
+
+.iconoUPDT {
+  padding-left: 5%; }
+
+ul.mainMenu {
+  margin-bottom: 0px !important;
+  padding-left: 0px !important; }
+
+/* MenuPrincipal */
+main {
+  height: 130vh; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+nav li {
+  padding-left: 1rem; }
+
+.mainMenu li > a {
+  color: black;
+  padding: 0 auto;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+  border: 0px;
+  margin: 0px;
+  font-size: 2.0rem;
+  background: #e1c147;
+  background: -moz-linear-gradient(135deg, #e1c147 4%, #d87c7f 52%, #cd25c7 98%);
+  background: -webkit-linear-gradient(135deg, #e1c147 4%, #d87c7f 52%, #cd25c7 98%);
+  background: linear-gradient(135deg, #e1c147 4%, #d87c7f 52%, #cd25c7 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1c147",endColorstr="#cd25c7",GradientType=1);
+  border-radius: 9%;
+  padding: 0.4rem; }
+
+.mainMenu > li {
+  float: left;
+  text-align: center;
+  list-style: none; }
+
+main ul {
+  padding: 0px;
+  margin: 0px; }
+
+body h1 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem; }
+
+/* Main Comienzo */
+main section h2 {
+  border-top: black; }
+
+section {
+  font-size: 1.5rem;
+  text-align: center; }
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". carrucelMain ."; }
+
+.carrucelMain {
+  grid-area: carrucelMain; }
+
+/* Seccion de productos y delivery */
+.imagenProductos {
+  width: 200px;
+  height: 350px; }
+
+.listaDeProductos {
+  display: flex;
+  flex-direction: row; }
+
+.listaDeProductos img:hover {
+  width: 400px;
+  height: 700px; }
+
+.imagenesCarrucel div img {
+  border-radius: 2%; }
+
+/* Acordeon productos */
+.containerProductosVariados {
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.5); }
+
+.acordeon_Productos image {
+  overflow: hidden;
+  max-height: 0;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+  background: #e4e4e4;
+  transition: all 0.2s ease-in; }
+
+section a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ffbe74;
+  border-bottom: 2px solid gray;
+  color: white;
+  text-align: center; }
+
+/* Productos del acordeon */
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black; }
+
+.card-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px; }
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative; }
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: white;
+  overflow-y: scroll;
+  transition: 0.8s ease; }
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%; }
+
+/* Comienzo de seccion de contacto */
+/* Comienzo seccion de Nosotros */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+p .descripcionParrafo {
+  overflow: visible; }
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+.containerProveedores {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+section:target p {
+  max-height: 120px;
+  padding: 10px; }
+
+/* Comienzo del Footer */
+footer {
+  background: #a99875;
+  background: -moz-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  background: -webkit-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  background: linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1);
+  background-size: cover;
+  bottom: 0 !important;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative; }
+
+footer ul li a {
+  text-decoration: none;
+  margin: 3rem;
+  color: black;
+  font-size: 2rem; }
+
+footer ul {
+  list-style: none;
+  display: flex;
+  margin: 2rem; }
+
+footer ul li img {
+  height: 2rem;
+  width: 2rem; }
+
+/* Comienzo de Keyframes */
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1; } }
+
+@media only screen and (max-width: 480px) {
+  .tituloUPDT {
+    background-color: #ffffff; } }

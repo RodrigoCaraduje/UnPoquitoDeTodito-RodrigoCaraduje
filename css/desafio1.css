@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif !important;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image: url("/Imagenes/Backgrounds/herringbone.png");
+    background-repeat: repeat;
+}
+/* Inicio de header */
+header {
+    margin: 0 auto;
+}
+.containerHeaderUPDT {
+    text-align: left !important;
+    display: flex;
+/*     justify-content: center;
+    align-items: center; */
+    background: rgb(169,152,117);
+    background: -moz-linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    background: linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1); 
+}
+.tracking-in-contract-bck-top {
+	-webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.logoUPDT {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+.iconoUPDT {
+    padding-left: 5%;
+}  
+ul.mainMenu {
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+}
+/* MenuPrincipal */
+main {
+    height: 130vh;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    padding-left: 1rem;
+}
+.mainMenu li>a {
+    color: black;
+    padding: 0 auto;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+    border: 0px;
+    margin: 0px;
+    font-size: 2.0rem;
+    background: rgb(225,193,71);
+    background: -moz-linear-gradient(135deg, rgba(225,193,71,1) 4%, rgba(216,124,127,1) 52%, rgba(205,37,199,1) 98%);
+    background: -webkit-linear-gradient(135deg, rgba(225,193,71,1) 4%, rgba(216,124,127,1) 52%, rgba(205,37,199,1) 98%);
+    background: linear-gradient(135deg, rgba(225,193,71,1) 4%, rgba(216,124,127,1) 52%, rgba(205,37,199,1) 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1c147",endColorstr="#cd25c7",GradientType=1);
+    border-radius: 9%;
+    padding: 0.4rem;
+}
+.mainMenu>li {
+    float: left;
+    text-align:center;
+    list-style: none;
+}
+main ul {
+    padding: 0px;
+    margin: 0px;
+}
+/* Main Comienzo */
+main section h2 {
+    border-top: black;
+}
+section {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.container2 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". carrucelMain .";
+}
+.carrucelMain { grid-area: carrucelMain; }
+/* Seccion de productos y delivery */
+.imagenProductos {
+    width: 200px;
+    height: 350px;
+}
+.listaDeProductos {
+    display: flex;
+    flex-direction: row;
+}
+.listaDeProductos img:hover {
+    width: 400px;
+    height: 700px;
+}
+.imagenesCarrucel div img{
+    border-radius: 2%;
+}
+/* Comienzo del Footer */
+footer {
+    background: rgb(169,152,117);
+    background: -moz-linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    background: linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1);
+    background-size: cover;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer ul li a {
+    text-decoration: none;
+    margin: 3rem;
+    color: black;
+    font-size: 2rem;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 2rem ;
+}
+footer ul li img {
+    height: 2rem;
+    width: 2rem;
+}
+/* Comienzo de Keyframes */
+@-webkit-keyframes tracking-in-contract-bck-top {
+    0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+            transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+    }
+}
+@keyframes tracking-in-contract-bck-top {
+    0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+            transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .tituloUPDT {
+            background-color: #ffffff;
+    }
+}
