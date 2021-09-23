@@ -1,16 +1,59 @@
 /* Comiendo de Proyecto UPDT Html */
-* {
+.containerForm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .containerForm__articleForm {
+    width: 45%; }
+    @media screen and (max-width: 600px) {
+      .containerForm__articleForm {
+        width: 80%; } }
+  @media screen and (max-width: 600px) {
+    .containerForm {
+      flex-direction: column; } }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
-  font-family: 'Varela Round', sans-serif !important; }
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
 
-html {
-  font-size: 62.5%; }
+p .descripcionParrafo {
+  overflow: visible; }
 
-body {
-  background-image: url("/Imagenes/Backgrounds/herringbone.png");
-  background-repeat: repeat; }
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
 
-/* Inicio de header */
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+.containerProveedores {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+section:target p {
+  max-height: 120px;
+  padding: 10px; }
+
+.mobileFirstMenu {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  /* @media screen and (max-width: 600px) {
+        flex-direction: column;
+        list-style: none;
+    } */ }
+
 header {
   margin: 0 auto; }
 
@@ -21,7 +64,9 @@ header {
   background: -moz-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
   background: -webkit-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
   background: linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1);
+  justify-content: center;
+  width: 100%; }
 
 .tracking-in-contract-bck-top {
   -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -30,30 +75,30 @@ header {
 .logoUPDT {
   width: 9rem;
   height: 9rem;
-  border-radius: 50%; }
+  border-radius: 50%;
+  background: none; }
 
-.iconoUPDT {
-  padding-left: 5%; }
+.mainMenu {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  width: 40%;
+  list-style: none;
+  /* @media screen and (max-width: 600px) {
+        width: 89%;
+    } */ }
 
-ul.mainMenu {
-  margin-bottom: 0px !important;
-  padding-left: 0px !important; }
-
-/* MenuPrincipal */
-main {
-  height: 130vh; }
+.sinBackground {
+  background: none !important; }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-nav li {
-  padding-left: 1rem; }
-
 .mainMenu li > a {
   color: black;
-  padding: 0 auto;
   display: block;
   text-decoration: none;
   min-width: 100px;
@@ -73,16 +118,71 @@ nav li {
   text-align: center;
   list-style: none; }
 
-main ul {
-  padding: 0px;
-  margin: 0px; }
+.widthNavegador {
+  width: 100%; }
+  @media screen and (max-width: 991px) {
+    .widthNavegador {
+      display: none; } }
 
-body h1 {
+.menuMobile {
+  width: 100%; }
+  @media screen and (min-width: 991px) {
+    .menuMobile {
+      display: none; } }
+
+.imagenMenuHamburguesa {
+  width: 28px;
+  display: flex;
+  justify-content: start;
+  background: transparent; }
+
+.designMenuHamburguesa {
+  width: 100%;
+  background: transparent !important; }
+
+.mobileFirstParrafoFooter {
+  margin-bottom: 0; }
+  @media screen and (max-width: 600px) {
+    .mobileFirstParrafoFooter {
+      display: none; } }
+
+.footer {
+  background: #a99875;
+  background: -moz-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  background: -webkit-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  background: linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1);
+  background-size: cover;
+  bottom: 0 !important;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%; }
+  .footer__footerList {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 1rem;
+    padding-left: 0; }
+    .footer__footerList__elementoLista__hipervinculoFooter {
+      text-decoration: none;
+      margin: 2rem;
+      color: black;
+      font-size: 2rem; }
+    .footer__footerList__elementoLista__imagenFooter {
+      height: 2rem;
+      width: 2rem; }
+
+.mobileFirstTitulo {
   display: flex;
   justify-content: center;
   padding: 2rem; }
+  @media screen and (max-width: 600px) {
+    .mobileFirstTitulo {
+      width: 100%;
+      display: none; } }
 
-/* Main Comienzo */
 main section h2 {
   border-top: black; }
 
@@ -90,33 +190,15 @@ section {
   font-size: 1.5rem;
   text-align: center; }
 
-.container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: ". carrucelMain ."; }
+.carrucelCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .carrucelMain {
-  grid-area: carrucelMain; }
+  width: 30%; }
 
-/* Seccion de productos y delivery */
-.imagenProductos {
-  width: 200px;
-  height: 350px; }
-
-.listaDeProductos {
-  display: flex;
-  flex-direction: row; }
-
-.listaDeProductos img:hover {
-  width: 400px;
-  height: 700px; }
-
-.imagenesCarrucel div img {
-  border-radius: 2%; }
-
-/* Acordeon productos */
+/* Acordeon */
 .containerProductosVariados {
   box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.5); }
 
@@ -139,7 +221,15 @@ section a {
   color: white;
   text-align: center; }
 
-/* Productos del acordeon */
+.accordionHardStyles {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.accordionSize {
+  width: 85%; }
+
+/* Productos del Acordeon */
 .cards {
   width: 100%;
   display: flex;
@@ -185,69 +275,26 @@ section a {
   opacity: 1;
   height: 100%; }
 
+* {
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif !important; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url("/Imagenes/Backgrounds/herringbone.png") !important;
+  background-repeat: repeat;
+  height: 100vh; }
+
+/* Inicio de header */
+/* MenuPrincipal */
+/* Main Comienzo */
+/* Acordeon productos */
+/* Productos del acordeon */
 /* Comienzo de seccion de contacto */
 /* Comienzo seccion de Nosotros */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical; }
-
-p .descripcionParrafo {
-  overflow: visible; }
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type=submit]:hover {
-  background-color: #45a049; }
-
-.containerProveedores {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px; }
-
-section:target p {
-  max-height: 120px;
-  padding: 10px; }
-
 /* Comienzo del Footer */
-footer {
-  background: #a99875;
-  background: -moz-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
-  background: -webkit-linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
-  background: linear-gradient(0deg, #a99875 0%, #b8a57c 4%, #c2ad80 11%, #c4af81 18%, #c6b082 30%, #d3c29f 63%, #d3c29f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1);
-  background-size: cover;
-  bottom: 0 !important;
-  display: flex;
-  justify-content: space-evenly;
-  position: relative; }
-
-footer ul li a {
-  text-decoration: none;
-  margin: 3rem;
-  color: black;
-  font-size: 2rem; }
-
-footer ul {
-  list-style: none;
-  display: flex;
-  margin: 2rem; }
-
-footer ul li img {
-  height: 2rem;
-  width: 2rem; }
-
 /* Comienzo de Keyframes */
 @-webkit-keyframes tracking-in-contract-bck-top {
   0% {

@@ -1,0 +1,39 @@
+.mobileFirstParrafoFooter {
+    margin-bottom: 0;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+.footer {
+    background: rgb(169,152,117);
+    background: -moz-linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    background: linear-gradient(0deg, rgba(169,152,117,1) 0%, rgba(184,165,124,1) 4%, rgba(194,173,128,1) 11%, rgba(196,175,129,1) 18%, rgba(198,176,130,1) 30%, rgba(211,194,159,1) 63%, rgba(211,194,159,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a99875",endColorstr="#d3c29f",GradientType=1);
+    background-size: cover;
+    bottom: 0 !important;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    &__footerList {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: 1rem ;
+        padding-left: 0;
+        &__elementoLista {
+            &__hipervinculoFooter {
+                text-decoration: none;
+                margin: 2rem;
+                color: black;
+                font-size: 2rem;
+            }
+            &__imagenFooter {
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+}

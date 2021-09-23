@@ -12,18 +12,35 @@
     </head>
     <body>
         <header class="containerHeaderUPDT">
-            <a href="../index.html" class="iconoUPDT tracking-in-contract-bck-top"><img src="../Imagenes/Iconos/Logo UPDT.jfif" alt="UnPoquitoDeToditoLogo" class="logoUPDT"></a>
-        <nav class="tracking-in-contract-bck-top">
-            <ul class="mainMenu">
-                <li><a href="../Html/Productos.html">Productos</a></li>
-                <li><a href="../Html/Nosotros.html">Nosotros</a></li>
-                <li><a href="../Html/Novedades.html">Novedades</a></li>
-                <li><a href="../Html/Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+            <nav class="tracking-in-contract-bck-top widthNavegador">
+                <ul class="mainMenu ">
+                    <div class="mobileFirstMenu">
+                        <li><a href="../Html/Productos.html">Productos</a></li>
+                        <li><a href="../Html/Nosotros.html">Nosotros</a></li>
+                    </div>
+                    <li><a href="../index.html" class="sinBackground tracking-in-contract-bck-top"><img src="../Imagenes/Iconos/Logo UPDT.jfif" alt="UnPoquitoDeToditoLogo" class="logoUPDT"></a></li>
+                    <div class="mobileFirstMenu">
+                        <li><a href="../Html/Novedades.html">Novedades</a></li>
+                        <li><a href="../Html/Contacto.html">Contacto</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <div class="menuMobile">
+                <div class="dropdown">
+                    <button class="btn btn-secondary designMenuHamburguesa" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Imagenes/Iconos/hamburgermenu_120234.png" alt="MenuHamburguesa" class="imagenMenuHamburguesa">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="../Html/Productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="../Html/Nosotros.html">Nosotros</a></li>
+                        <li><a class="dropdown-item" href="../Html/Novedades.html">Novedades</a></li>
+                        <li><a class="dropdown-item" href="../Html/Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <h1><a href="https://fontmeme.com/es/fuentes-3d/"><img src="https://fontmeme.com/permalink/210726/38ba1b3419901f3631ef5feb3521a7b8.png" alt="fuentes-3d" border="0"></a></h1>
         <main>
+            <h1 class="mobileFirstTitulo"><a href="https://fontmeme.com/es/fuentes-3d/"><img src="https://fontmeme.com/permalink/210726/38ba1b3419901f3631ef5feb3521a7b8.png" alt="fuentes-3d" border="0"></a></h1>
             <section>
                 <article>
                     <h2>¿Quienes somos?</h2>
@@ -36,14 +53,12 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <div class="footer">
-                <ul>
-                    <li><a href="https://www.facebook.com/unpoquitodetodito2015" title="Facebook">Facebook <img src="../Imagenes/Iconos/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/unpoquitodetodito2015/" title="Instagram">Instagram <img src="../Imagenes/Iconos/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=+5493434196098">WhatsApp <img src="../Imagenes/Iconos/whatsapp.png" alt="WhatsApp"></a>
-                </ul>
-            </div>
+        <footer class="footer">
+            <ul class="footer__footerList">
+                <li class="footer__footerList__elementoLista"><a href="https://www.facebook.com/unpoquitodetodito2015" title="Facebook" class="footer__footerList__elementoLista__hipervinculoFooter">Facebook<img src="../Imagenes/Iconos/facebook.png" alt="Facebook" class="footer__footerList__elementoLista__imagenFooter"></a></li>
+                <li class="footer__footerList__elementoLista"><a href="https://www.instagram.com/unpoquitodetodito2015/" title="Instagram" class="footer__footerList__elementoLista__hipervinculoFooter">Instagram<img src="../Imagenes/Iconos/instagram.png" alt="Instagram" class="footer__footerList__elementoLista__imagenFooter"></a></li>
+                <li class="footer__footerList__elementoLista"><a href="https://api.whatsapp.com/send?phone=+5493434196098" class="footer__footerList__elementoLista__hipervinculoFooter">WhatsApp<img src="../Imagenes/Iconos/whatsapp.png" alt="WhatsApp" class="footer__footerList__elementoLista__imagenFooter"></a>
+            </ul>
         </footer>
         <script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>

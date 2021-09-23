@@ -1,0 +1,24 @@
+.mobileFirstTitulo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        display: none;
+    }
+}
+main section h2 {
+    border-top: black;
+}
+section {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.carrucelCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrucelMain {
+    width: 30%;
+}
