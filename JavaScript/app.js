@@ -33,3 +33,35 @@ while(contraseña != "1234" ){
 } */
 
 
+
+
+/* Simulador interactivo Tp + Funciones relacionadasTp*/
+const iva = 21
+const papasFritas = 350;
+const palitosFritos = 260;
+const maniSaborizado = 527;
+const aritosFrutales = 1349;
+
+const compraIva = (productoElegido) => {
+    return productoElegido * iva / 100;
+};
+
+const defineProducto = (producto) => {
+    switch (producto){
+        case "papasF":
+                return papasFritas;
+        case "palitosF":
+                return palitosFritos;
+        case "maniS":
+                return maniSaborizado;
+        case "aritosF":
+                return aritosFrutales;
+    }
+};
+
+const procesoIva = () =>{
+    const dato = prompt("Ingrese su producto");
+    let productoElegido = defineProducto(dato);
+    return productoElegido + compraIva(productoElegido)
+}
+console.log(procesoIva());
