@@ -197,6 +197,12 @@ section {
 .carrucelMain {
   width: 30%; }
 
+.estoEsGrid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 150px 150px; }
+
 /* Acordeon */
 .containerProductosVariados {
   box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.5); }

@@ -1,4 +1,4 @@
-alert ("Hola mundo, esto es js")
+/* alert ("Hola mundo, esto es js")
 let nombre = prompt ("Ingrese su nombre")
 let apellido = prompt ("Ingrese su apellido")
 let edad = Number(prompt("Ingrese su edad"))
@@ -25,9 +25,11 @@ if (sexo === "H"){
 console.log (`$(palabra) $(nombre) $(apellido) tu edad es $(edad)`)
 
 let contraseña = prompt("Ingrese su contraseña");
-//Repetimos con While hasta que el usuario ingresa "ESC"
+
 while(contraseña != "1234" ){
     alert("El usuario ingresó "+ contraseña);
-    //Volvemos a solicitar un dato. En la próxima iteración se evalúa si no es ESC.
+    
     contraseña = prompt("Reintentar contraseña");
-}
+} */
+
+
