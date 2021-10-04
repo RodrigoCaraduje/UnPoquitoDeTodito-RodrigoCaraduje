@@ -101,7 +101,7 @@ const defineProductos = (elemento) => {
 comprar = () => {
     let product = prompt("Ingrese su Producto")
     const eligeProducto = defineProductos (product);
-    if(product.getStock()){
+    if(eligeProducto.getStock()){
         eligeProducto.stock = eligeProducto.stock - 1;
         console.log("Compraste un producto");
         console.log("Veo el envio del producto",eligeProducto);
@@ -111,7 +111,3 @@ comprar = () => {
     }
 };
 comprar();
-
-
-
-
