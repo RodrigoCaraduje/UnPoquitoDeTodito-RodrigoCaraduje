@@ -1,6 +1,6 @@
 /* Desafio de objetos*/
 
-/* class productos{
+class productos{
     constructor(nombre,precio,peso,stock){
         this.nombre = nombre,
         this.precio = precio,
@@ -14,11 +14,17 @@
     getStock = () => {return this.stock > 0 ? true : false}
 }
 
-const chicito = new productos ("Julicroc", 300, 500, 0);
-const palitosFritos = new productos ("Laurens", 250, 1000, 15);
-const papasFritas = new productos ("Lays", 450, 800, 7);
+const chicito = new productos ("Julicroc",["10/12", "2022"], 300, 500, 0);
+const palitosFritos = new productos ("Laurens",["11/12", "2023"], 250, 1000, 15);
+const papasFritas = new productos ("Lays",["4/2", "2021"], 450, 800, 7);
 
-const defineProductos = (elemento) => {
+const listadoProductos = []
+
+listadoProductos.push(chicito)
+listadoProductos.push(palitosFritos)
+listadoProductos.push(papasFritas)
+
+/* const defineProductos = (elemento) => {
     switch (elemento){
         case "Julicroc": 
                 return chicito;
@@ -43,16 +49,3 @@ comprar = () => {
 };
 comprar(); */
 
-/*Tp Arrays */
-
-const listaProductos = ["Arandanos","Nueces"];
-let   cantidad = 10;
-do{
-    let seleccion = prompt("Ingresar producto");
-    listaProductos.push(seleccion.toUpperCase());
-    console.log(listaProductos.length);
-}while(listaProductos.length != cantidad)
-
-const nuevaListaProductos = listaProductos.concat([]);
-
-alert(nuevaListaProductos.join("\n"));
