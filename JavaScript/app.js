@@ -23,6 +23,7 @@ const listadoProductos = []
 listadoProductos.push(chicito)
 listadoProductos.push(palitosFritos)
 listadoProductos.push(papasFritas)
+listadoProductos.sort
 
 /* const defineProductos = (elemento) => {
     switch (elemento){
