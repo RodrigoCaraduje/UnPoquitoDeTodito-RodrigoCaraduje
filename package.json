@@ -1,18 +1,25 @@
 {
-  "name": "proyectocoderhouseupdt",
+  "name": "sass",
   "version": "1.0.0",
+  "description": "��#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000-\u0000R\u0000o\u0000d\u0000r\u0000i\u0000g\u0000o\u0000C\u0000a\u0000r\u0000a\u0000d\u0000u\u0000j\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000-\u0000R\u0000o\u0000d\u0000r\u0000i\u0000g\u0000o\u0000C\u0000a\u0000r\u0000a\u0000d\u0000u\u0000j\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000-\u0000R\u0000o\u0000d\u0000r\u0000i\u0000g\u0000o\u0000C\u0000a\u0000r\u0000a\u0000d\u0000u\u0000j\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000\r\u0000 \u0000#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000-\u0000R\u0000o\u0000d\u0000r\u0000i\u0000g\u0000o\u0000C\u0000a\u0000r\u0000a\u0000d\u0000u\u0000j\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000-\u0000R\u0000o\u0000d\u0000r\u0000i\u0000g\u0000o\u0000C\u0000a\u0000r\u0000a\u0000d\u0000u\u0000j\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000U\u0000n\u0000P\u0000o\u0000q\u0000u\u0000i\u0000t\u0000o\u0000D\u0000e\u0000T\u0000o\u0000d\u0000i\u0000t\u0000o\u0000-\u0000R\u0000o\u0000d\u0000r\u0000i\u0000g\u0000o\u0000C\u0000a\u0000r\u0000a\u0000d\u0000u\u0000j\u0000e\u0000\r\u0000 \u0000",
   "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/Style.scss css/Style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoCaraduje/UnPoquitoDeTodito-RodrigoCaraduje.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
+  "bugs": {
+    "url": "https://github.com/RodrigoCaraduje/UnPoquitoDeTodito-RodrigoCaraduje/issues"
   },
-  "dependencies": {},
-  "description": ""
+  "homepage": "https://github.com/RodrigoCaraduje/UnPoquitoDeTodito-RodrigoCaraduje#readme"
 }
