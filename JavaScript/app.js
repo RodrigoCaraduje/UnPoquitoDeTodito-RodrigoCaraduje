@@ -25,7 +25,7 @@ listadoProductos.push(palitosFritos)
 listadoProductos.push(papasFritas)
 listadoProductos.sort
 
-/* const defineProductos = (elemento) => {
+const defineProductos = (elemento) => {
     switch (elemento){
         case "Julicroc": 
                 return chicito;
@@ -48,5 +48,5 @@ comprar = () => {
         console.log("No hay stock disponible");
     }
 };
-comprar(); */
+comprar();
 
