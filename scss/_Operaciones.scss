@@ -1,1 +1,10 @@
-$ancho:360px
+.operaciones1 {
+    width: $ancho;
+    height: $ancho/2;
+}
+
+.operaciones2 {
+    width: $ancho*2;
+}
+
+$ancho: 680px
