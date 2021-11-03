@@ -280,6 +280,16 @@ section a {
   opacity: 1;
   height: 100%; }
 
+/* .operaciones1 {
+    width: $ancho;
+    height: $ancho/2;
+}
+
+.operaciones2 {
+    width: $ancho*2;
+}
+
+$ancho: 680px */
 * {
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif !important; }
