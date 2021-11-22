@@ -300,7 +300,7 @@ html {
 body {
   background-image: url("/Imagenes/Backgrounds/herringbone.png") !important;
   background-repeat: repeat;
-  height: 100vh; }
+  height: 100%vh; }
 
 /* Inicio de header */
 /* MenuPrincipal */
